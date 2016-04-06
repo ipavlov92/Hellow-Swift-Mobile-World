@@ -22,12 +22,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLi-8y-OQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="599"/>
+            <point key="canvasLocation" x="-141" y="1149"/>
         </scene>
-        <!--Item-->
+        <!--Приветствие-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hellow_Swift_Mobile_World" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Приветствие" id="BYZ-38-t0r" customClass="ViewController" customModule="Hellow_Swift_Mobile_World" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -69,7 +69,7 @@
                             <constraint firstItem="3CX-Mf-8bp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="vz0-ml-va0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="OB9-1w-hRe"/>
+                    <tabBarItem key="tabBarItem" title="Приветствие" id="OB9-1w-hRe"/>
                     <connections>
                         <outlet property="greetingLabel" destination="3CX-Mf-8bp" id="hX8-YZ-Wpc"/>
                         <outlet property="inputField" destination="Oep-d4-Pno" id="apG-1P-aEu"/>
@@ -77,12 +77,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="253"/>
+            <point key="canvasLocation" x="577" y="775"/>
         </scene>
-        <!--Item-->
+        <!--Конвертор-->
         <scene sceneID="8s4-fF-qCu">
             <objects>
-                <viewController id="OFq-7m-2N2" sceneMemberID="viewController">
+                <viewController title="Конвертор" id="OFq-7m-2N2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XbN-xe-wSX"/>
                         <viewControllerLayoutGuide type="bottom" id="JEr-mA-urh"/>
@@ -90,13 +90,64 @@
                     <view key="view" contentMode="scaleToFill" id="ELZ-sW-mbx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-pw-Ay0">
+                                <rect key="frame" x="20" y="70" width="560" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-vX-Y7h">
+                                        <rect key="frame" x="265" y="56" width="30" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="☜">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOQ-th-ffj">
+                                        <rect key="frame" x="22" y="38" width="208" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="How-pG-iMz">
+                                        <rect key="frame" x="330" y="38" width="207" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCZ-Ih-qwk">
+                                        <rect key="frame" x="265" y="0.0" width="30" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="☞">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87072926759719849" green="0.78471797704696655" blue="0.17172688245773315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rCZ-Ih-qwk" firstAttribute="centerX" secondItem="ZsP-pw-Ay0" secondAttribute="centerX" id="1qc-Qc-u8s"/>
+                                    <constraint firstItem="sOQ-th-ffj" firstAttribute="centerY" secondItem="ZsP-pw-Ay0" secondAttribute="centerY" id="7Ho-VE-GjO"/>
+                                    <constraint firstItem="KVZ-vX-Y7h" firstAttribute="top" secondItem="rCZ-Ih-qwk" secondAttribute="bottom" constant="8" id="8Gf-R5-GHb"/>
+                                    <constraint firstAttribute="trailing" secondItem="How-pG-iMz" secondAttribute="trailing" constant="23" id="A9Z-oh-aQv"/>
+                                    <constraint firstItem="How-pG-iMz" firstAttribute="centerY" secondItem="sOQ-th-ffj" secondAttribute="centerY" id="Clu-Bj-dOu"/>
+                                    <constraint firstItem="sOQ-th-ffj" firstAttribute="leading" secondItem="ZsP-pw-Ay0" secondAttribute="leading" constant="22" id="LdW-Ic-G6O"/>
+                                    <constraint firstItem="How-pG-iMz" firstAttribute="width" secondItem="sOQ-th-ffj" secondAttribute="width" id="f6t-xg-7Cm"/>
+                                    <constraint firstItem="rCZ-Ih-qwk" firstAttribute="centerX" secondItem="KVZ-vX-Y7h" secondAttribute="centerX" id="nUJ-yy-ffd"/>
+                                    <constraint firstAttribute="height" constant="106" id="onu-m2-p6q"/>
+                                    <constraint firstItem="rCZ-Ih-qwk" firstAttribute="top" secondItem="ZsP-pw-Ay0" secondAttribute="top" id="pZ2-m1-hDI"/>
+                                    <constraint firstItem="How-pG-iMz" firstAttribute="leading" secondItem="sOQ-th-ffj" secondAttribute="trailing" constant="100" id="uqH-bB-Wux"/>
+                                    <constraint firstItem="How-pG-iMz" firstAttribute="height" secondItem="sOQ-th-ffj" secondAttribute="height" id="wgn-ce-4SE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.97377835277264635" green="1" blue="0.73253240914134465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZsP-pw-Ay0" firstAttribute="top" secondItem="XbN-xe-wSX" secondAttribute="bottom" constant="50" id="WRf-sY-7FR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZsP-pw-Ay0" secondAttribute="leading" id="rXY-f5-4nu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZsP-pw-Ay0" secondAttribute="trailing" id="t5k-kW-ZfR"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ALw-w5-K0T"/>
+                    <tabBarItem key="tabBarItem" title="Конвертор" id="ALw-w5-K0T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyO-VQ-5IQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="959"/>
+            <point key="canvasLocation" x="577" y="1547"/>
         </scene>
     </scenes>
 </document>
