@@ -14,7 +14,8 @@
 		6A920CF41CB402920059EED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A920CF21CB402920059EED6 /* LaunchScreen.storyboard */; };
 		6A920CFF1CB402920059EED6 /* Hellow_Swift_Mobile_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A920CFE1CB402920059EED6 /* Hellow_Swift_Mobile_WorldTests.swift */; };
 		6A920D0A1CB402920059EED6 /* Hellow_Swift_Mobile_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A920D091CB402920059EED6 /* Hellow_Swift_Mobile_WorldUITests.swift */; };
-		6A920D201CB5757E0059EED6 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A920D1F1CB5757E0059EED6 /* ConverterViewController.swift */; };
+		6A920D231CB693AF0059EED6 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A920D211CB693AF0059EED6 /* ConverterViewController.swift */; };
+		6A920D241CB693AF0059EED6 /* ConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A920D221CB693AF0059EED6 /* ConverterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		6A920D051CB402920059EED6 /* Hellow Swift Mobile WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hellow Swift Mobile WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A920D091CB402920059EED6 /* Hellow_Swift_Mobile_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hellow_Swift_Mobile_WorldUITests.swift; sourceTree = "<group>"; };
 		6A920D0B1CB402920059EED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A920D1F1CB5757E0059EED6 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		6A920D211CB693AF0059EED6 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		6A920D221CB693AF0059EED6 /* ConverterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConverterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 				6A920CE91CB402920059EED6 /* AppDelegate.swift */,
 				6A920CEB1CB402920059EED6 /* ViewController.swift */,
 				6A920CED1CB402920059EED6 /* Main.storyboard */,
+				6A920D211CB693AF0059EED6 /* ConverterViewController.swift */,
+				6A920D221CB693AF0059EED6 /* ConverterViewController.xib */,
 				6A920CF01CB402920059EED6 /* Assets.xcassets */,
 				6A920CF21CB402920059EED6 /* LaunchScreen.storyboard */,
 				6A920CF51CB402920059EED6 /* Info.plist */,
-				6A920D1F1CB5757E0059EED6 /* ConverterViewController.swift */,
 			);
 			path = "Hellow Swift Mobile World";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				6A920CF41CB402920059EED6 /* LaunchScreen.storyboard in Resources */,
 				6A920CF11CB402920059EED6 /* Assets.xcassets in Resources */,
 				6A920CEF1CB402920059EED6 /* Main.storyboard in Resources */,
+				6A920D241CB693AF0059EED6 /* ConverterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +265,7 @@
 			files = (
 				6A920CEC1CB402920059EED6 /* ViewController.swift in Sources */,
 				6A920CEA1CB402920059EED6 /* AppDelegate.swift in Sources */,
-				6A920D201CB5757E0059EED6 /* ConverterViewController.swift in Sources */,
+				6A920D231CB693AF0059EED6 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

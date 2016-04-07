@@ -82,7 +82,7 @@
         <!--Конвертор-->
         <scene sceneID="8s4-fF-qCu">
             <objects>
-                <viewController title="Конвертор" id="OFq-7m-2N2" sceneMemberID="viewController">
+                <viewController title="Конвертор" id="OFq-7m-2N2" customClass="ConverterViewController" customModule="Hellow_Swift_Mobile_World" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XbN-xe-wSX"/>
                         <viewControllerLayoutGuide type="bottom" id="JEr-mA-urh"/>
@@ -100,6 +100,9 @@
                                         <state key="normal" title="☜">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="usdToRubPressed:" destination="OFq-7m-2N2" eventType="touchUpInside" id="ppA-To-6bM"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RUB" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOQ-th-ffj">
                                         <rect key="frame" x="22" y="38" width="208" height="30"/>
@@ -118,6 +121,9 @@
                                         <state key="normal" title="☞">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rubToUsdPressed:" destination="OFq-7m-2N2" eventType="touchUpInside" id="d9F-gG-3Ld"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87072926759719849" green="0.78471797704696655" blue="0.17172688245773315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -145,6 +151,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Конвертор" id="ALw-w5-K0T"/>
+                    <connections>
+                        <outlet property="rubInput" destination="sOQ-th-ffj" id="l0M-fJ-hJC"/>
+                        <outlet property="usdInput" destination="How-pG-iMz" id="49U-Ri-jmt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyO-VQ-5IQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
